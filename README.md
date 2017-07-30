@@ -2,14 +2,21 @@
 
 ## Installation
 
+### RabbitMQ
+
+```
+$ sudo apt-get update
+$ sudo apt-get install rabbitmq-server
+```
+
 ### Create User
 
 Create an admin user with password "admin":
 
 ```
-$ rabbitmqctl add_user admin admin
-$ rabbitmqctl set_user_tags admin administrator
-$ rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"
+$ sudo rabbitmqctl add_user admin admin
+$ sudo rabbitmqctl set_user_tags admin administrator
+$ sudo rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"
 ```
 
 ### Enable Management Interface
