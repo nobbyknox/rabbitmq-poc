@@ -14,7 +14,7 @@ $ rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"
 
 ### Enable Management Interface
 
-(See https://stackoverflow.com/questions/22850546/cant-access-rabbitmq-web-management-interface-after-fresh-install)
+[See this helpful post on Stack Overflow](https://stackoverflow.com/questions/22850546/cant-access-rabbitmq-web-management-interface-after-fresh-install)
 
 ```
 $ ./rabbitmq-plugins enable rabbitmq_management
