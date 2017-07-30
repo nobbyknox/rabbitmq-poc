@@ -1,6 +1,6 @@
-# Rabbit MQ
+# Rabbit MQ Proof of Concept
 
-## Installation
+## RabbitMQ Installation
 
 ### RabbitMQ
 
@@ -30,3 +30,19 @@ $ ./rabbitmq-plugins enable rabbitmq_management
 Access the management interface here:
 
 http://127.0.0.1:15672/
+
+## rabbitmq-poc Installation
+
+```
+$ npm install
+$ cp scripts/publisher-template.sh ./publisher-private.sh
+$ cp scripts/worker-template.sh ./worker-private.sh
+
+# edit publisher and worker private shell scripts to your liking
+
+# in one session, run:
+$ ./publisher-private.sh
+
+# in another session, run:
+$ ./worker-private.sh
+```
